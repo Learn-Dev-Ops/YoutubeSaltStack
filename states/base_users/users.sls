@@ -1,6 +1,5 @@
-mo_ali_user:
+mo.ali:
   user.present:
-    - name: mo.ali
     - fullname: Mo Ali
     - shell: /bin/zsh
     - home: /home/mo.ali
@@ -8,8 +7,8 @@ mo_ali_user:
       - sudo
   ssh_auth.present:
     - user: mo.ali
-    - source: salt://base_users/ssh_keys/mo_ali.pub
+    - source: salt://base_users/mo_ali.pub
     - config: '%h/.ssh/authorized_keys'
   pkg.installed:
-    - pkgs:
+    pkgs:
       - zsh
