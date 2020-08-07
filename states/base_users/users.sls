@@ -10,3 +10,6 @@ mo_ali_user:
     - user: mo.ali
     - source: salt://base_users/ssh_keys/mo_ali.pub
     - config: '%h/.ssh/authorized_keys'
+  pkg.installed:
+    - pkgs:
+      - zsh
