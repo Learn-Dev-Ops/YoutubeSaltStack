@@ -1,7 +1,5 @@
-shells:
-  pkg.installed:
-    - pkgs:
-      - zsh
+zsh:
+  pkg.installed: []
 
 mo.ali:
   user.present:
