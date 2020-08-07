@@ -5,7 +5,7 @@ mo_ali_user:
     - shell: /bin/zsh
     - home: /home/mo.ali
     - groups:
-      - wheel
+      - sudo
   ssh_auth.present:
     - user: mo.ali
     - source: salt://ssh_keys/mo_ali.pub
