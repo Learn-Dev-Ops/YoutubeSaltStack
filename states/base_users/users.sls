@@ -10,5 +10,5 @@ mo.ali:
     - source: salt://base_users/mo_ali.pub
     - config: '%h/.ssh/authorized_keys'
   pkg.installed:
-    pkgs:
+    - pkgs:
       - zsh
