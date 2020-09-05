@@ -1,11 +1,15 @@
-mo_ali_user:
+zsh:
+  pkg.installed: []
+
+mo.ali:
   user.present:
-    - name: mo.ali
     - fullname: Mo Ali
     - shell: /bin/zsh
-    - home: /home/mo.ali
     - groups:
       - sudo
+    - home: /home/mo.ali
+    - require:
+      - pkg: zsh
   ssh_auth.present:
     - user: mo.ali
     - source: salt://base_users/ssh_keys/mo_ali.pub
