@@ -4,8 +4,8 @@ default_grains:
     - value:
       - yt_environment: saltstack_tutorial
       - video:
-        - cmd
         - intro
+        - cmd
         - state
-        - pillar
         - grains
+        - pillars
