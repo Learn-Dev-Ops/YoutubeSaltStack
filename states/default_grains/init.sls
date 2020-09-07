@@ -1,11 +1,11 @@
-youtube_default_grains:
+default_grains:
   grains.present:
     - name: environment
     - value:
-      - yt_environment: saltstack_youtube
+      - yt_environment: saltstack_tutorial
       - video:
-        - states
-        - grains
-        - pillars
         - cmd
         - intro
+        - state
+        - pillar
+        - grains
